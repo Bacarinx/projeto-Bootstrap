@@ -33,30 +33,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container" id="nav-container">
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-md fixed-top">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="img/hdcagency_logo.svg" alt="Logo HDC Agency">hDC Agency
                 </a>
 
                 <!-- Botão Hamburguer -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links"   aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu">Home</a>
-                        <a class="nav-item nav-link" id="about-menu">A agência</a>
-                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
-                        <a class="nav-item nav-link" id="team-menu">Team</a>
-                        <a class="nav-item nav-link" id="portfolio-menu">Projetos</a>
-                        <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" id="home-menu" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" id="about-menu" href="#about-area">A agência</a></li>
+                        <li class="nav-item"><a class="nav-link" id="services-menu" href="#services-area">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" id="team-menu" href="#team-menu">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" id="portfolio-menu" href="#protfolio-menu">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" id="contact-menu" href="#contact-menu">Contato</a></li>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
     </header>
+    
     <main>
         <div class="container-fluid">
             <!-- Carousel slide -->
