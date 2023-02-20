@@ -33,14 +33,17 @@
 </head>
 <body>
     <header>
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container" id="nav-container">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="img/hdcagency_logo.svg" alt="Logo HDC Agency">hDC Agency
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- Botão Hamburguer -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links"   aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" id="home-menu">Home</a>
@@ -51,11 +54,12 @@
                         <a class="nav-item nav-link" id="contact-menu">Contato</a>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container-fluid">
+            <!-- Carousel slide -->
             <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
                 <!-- Criando os indicardores dos slides -->
                 <div class="carousel-indicators">
@@ -103,6 +107,73 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
+            </div>
+
+            <!-- Sobre a empresa -->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center main-title">Sobre a hDC Agency</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/agencia.jpg" alt="Agencia hDC">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Uma Agência pensa no futuro</h3>
+                            <p>Nossos projetos são adaptados ao cliente e seu propósito</p>
+                            <p>Após a especificação do projeto, os arquitetos de software definirão as melhores tecnologias para seu projeto</p>
+                            <p>E nossos designers trabalharão na sua interface/layout para impulsionar o negócio</p>
+                            <p>Veja outros diferenciais:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Utilização de Machine learning</li>
+                                <li><i class="fas fa-check"></i> Layout Responsivo para todos dispositivos</li>
+                                <li><i class="fas fa-check"></i> Integração com diversos sistemas do mercado</li>
+                                <li><i class="fas fa-check"></i> Sistema de pagamento próprio</li>
+                                <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviços da empresa -->
+            <div class="container" id="services-area">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title text-center">Nossas especialidades</h3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Aplicativos nativos</h4>
+                        <p3>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos</p3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4>E-commerces</h4>
+                        <p3>Temos uma plataforma prórpira de e-commerce que se adapta a qualquer regra de negócio</p3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>Design Criativo</h4>
+                        <p3>Nossos designers são especializados em UI/UX, e também possuem vasta experiência no mercado de software</p3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fab fa-google"></i>
+                        <h4>Experts em SEO</h4>
+                        <p3>Com nosso serviço de marketing, seu site será melhor posicionado no google e venderá mais</p3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Suporte 24/7</h4>
+                        <p3>Você sempre terá alguem da equipe disponivel pra suporte, em diferentes plataformas. (chat, e-mail, skype)</p3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-server"></i>
+                        <h4>Experiência em seevidores</h4>
+                        <p3>Garantimos uptime e também rapido tempo de resposta do seu site para seu cliente</p3>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
