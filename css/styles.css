@@ -436,4 +436,97 @@ header, .navbar {
     color: #56e2f7;
 }
 
+/* Responsive */
+@media(max-width: 768px) {
+    
+/* Geral */
+.container {
+    padding: 20px 0;
+}
+
+.main-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* slider */
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: auto;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    left: 10%;
+    right: 10%;
+}
+
+/* About */
+#about-area img {
+   margin-top: 30%;
+}
+
+/* data */
+.circle-box div {
+    padding: 0 10px;
+}
+
+#data-area p {
+    font-size: 16px;
+}
+
+/* Team */
+.card-title {
+    font-size: 14px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+/* apply */
+#apply-area .apply-box {
+    padding: 50px 25px;
+}
+
+/* protfólio */
+#portfolio-area .filter-btn {
+    width: auto;
+}
+
+/* news */
+#news-area p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email-input {
+    width: 70%;
+}
+
+#call-area {
+    margin-top: 30px;
+}
+
+#call-area .container {
+    padding: 30px;
+}
+
+#call-area p, #call-area #call-btn {
+    font-size: 16px;
+}
+
+
+}
+
 
