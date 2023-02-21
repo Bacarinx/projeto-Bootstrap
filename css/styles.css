@@ -22,7 +22,7 @@ p, li {
 
 header, .navbar {
     background-color: #353D41;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .nav-container {
@@ -31,12 +31,13 @@ header, .navbar {
 }
 
 #logo {
-    width: 90px;
+    max-width: 70px;
 }
 
 .navbar-brand {
     padding: 0;
     color: white;
+    width: 20%;
 }
 
 .navbar-brand img {
@@ -437,21 +438,22 @@ header, .navbar {
 }
 
 /* Responsive */
-@media(max-width: 768px) {
-        
-    /* Geral */
-    .container {
-        padding: 20px 0;
-    }
 
+@media(max-width: 992px) {
+    /* Geral */
     .main-title {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     /* slider */
     #mainSlider .carousel-inner, #mainSlider .carousel-item{
         height: auto;
+    }
+
+    #mainSlider .carousel-caption {
+        padding: 0;
+        margin: auto;
     }
 
     #mainSlider .carousel-caption h2 {
@@ -460,9 +462,9 @@ header, .navbar {
     }
 
     #mainSlider .carousel-caption p {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 40px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .carousel-caption {
@@ -470,14 +472,92 @@ header, .navbar {
         right: 10%;
     }
 
-    /* About */
+    /* about */
+
     #about-area img {
     margin-top: 30%;
+    }
+    
+    /* data */
+    .circle-box {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #data-team .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* portfolio */
+    #portfolio-area .filter-btn {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media(max-width: 768px) {
+        
+    /* Geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    .main-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption {
+        padding: 0;
+        top: 20%;
+
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 12px;
+    }
+
+    /* About */
+    #about-area img {
+    margin-top: 10%;
+    }
+
+    #about-area h3 {
+        margin-bottom: 0;
     }
 
     /* data */
     .circle-box div {
         padding: 0 10px;
+    }
+
+    .circle-box {
+        width: 50%;
     }
 
     #data-area p {
@@ -493,16 +573,37 @@ header, .navbar {
         font-size: 12px;
     }
 
+    .card-body p {
+        font-size: 12px;
+    }
+
+    #data-team .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
     /* apply */
     #apply-area .apply-box {
         padding: 50px 25px;
     }
 
-    /* protfólio */
-    #portfolio-area .filter-btn {
-        width: auto;
+    #apply-area {
+        height: auto;
     }
 
+    #company-img {
+        display: none;
+    }
+
+    /* protfólio */
+    #portfolio-area .filter-btn {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
     /* news */
     #news-area p {
         width: 80%;
@@ -523,7 +624,7 @@ header, .navbar {
     }
 
     #call-area p, #call-area #call-btn {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
@@ -532,11 +633,11 @@ header, .navbar {
 
     /* Slider */
     #mainSlider {
-        margin-top: 90px;
+        margin-top: 20px;
     }
 
     #mainSlider .carousel-caption {
-        top: 5%;
+        top: 20%;
     }
 
     #mainSlider .carousel-caption h2 {
@@ -548,7 +649,7 @@ header, .navbar {
         display: none;
     }
 
-    carousel-caption .main-btn {
+    .carousel-caption .main-btn {
         font-size: 14px;
     }
 
@@ -573,6 +674,10 @@ header, .navbar {
         margin-bottom: 30px;
     }
 
+    .card-body p {
+        font-size: 12px;
+    }
+
     /* apply */
     #apply-area {
         height: auto;
@@ -584,12 +689,21 @@ header, .navbar {
 
     /* portfólio */
     #portfolio-area .filter-btn{
-        width: 41%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .project-box {
         width: 50%;
+    }
+
+    #portfolio-area .filter-btn {
+        width: auto;
+        min-width: 120px;
+        padding: 10px;
+    }
+
+    .filter-btn { 
+        font-size: 14px;
     }
 
     /* news */
@@ -607,7 +721,7 @@ header, .navbar {
 
     /* cta */
     #call-area p, #call-area #call-btn {
-        font-size: 13px;
+        font-size: 12px;
         letter-spacing: 0;
         margin: 0;
         width: 50%;
