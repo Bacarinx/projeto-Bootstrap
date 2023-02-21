@@ -22,6 +22,7 @@ p, li {
 
 header, .navbar {
     background-color: #353D41;
+    padding: 0 50px;
 }
 
 .nav-container {
@@ -30,7 +31,7 @@ header, .navbar {
 }
 
 #logo {
-    width: 75px;
+    width: 90px;
 }
 
 .navbar-brand {
@@ -52,7 +53,12 @@ header, .navbar {
 
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem .8rem;
+    
 }
+
+.nav-item a  {
+    font-size: 18px;
+} 
 
 /* Slider */
 
